@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/bf2507e5e5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+
+        <div class="counters">
+            <div class="container">
+                <label>Peasants <i id="pup" class="fas posfeed fa-arrow-up"></i><i id="pdown" class="fas negfeed fa-arrow-down"></i></label>
+                <div class="holder">
+                    <div class="progress progress-item peasants">&#8205;</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <label>Nobility <i id="nup" class="fas posfeed fa-arrow-up"></i><i id="ndown" class="fas negfeed fa-arrow-down"></i></label>
+                <div class="holder">
+                    <div class="progress progress-item nobility">&#8205;</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <label>Army <i id="aup" class="fas posfeed fa-arrow-up"></i><i id="adown" class="fas negfeed fa-arrow-down"></i></label>
+                <div class="holder">
+                    <div class="progress progress-item army">&#8205;</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <label>Gold <i id="gup" class="fas posfeed fa-arrow-up"></i><i id="gdown" class="fas negfeed fa-arrow-down"></i></label>
+                <div class="holder">
+                    <div class="progress progress-item gold">&#8205;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game float-right">
+            <div class="option float-right">
+                <img id="player" class="playerPortrait float-right mr-3 img-thumbnail" src="./assets/images/People3-3.png" alt="">
+                <div class="dayCounter text-center">
+                    <h1>YEAR <span id="dayNum">1</span></h1>
+                    <p id="nextChoice">Press for the next choice.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="story text-center">
+            <h4 id="story" class="text-light"></h4>
+        </div>
+
+
+
+
+        <!-- MODAL FOR CHOICES -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p id="optText"></p>
+                <p id="opt1" class="btn "></p>
+                <p id="opt2" class="btn "></p>
+            </div>
+        </div>
+        <!-- MODAL FOR CHOICES -->
+
+
+    </div>
+
+    <!-- MODAL FOR CHOICES -->
+    <div id="newGame" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content text-center">
+            <p>You survived for <span id="cenas"></span> years!</p>
+            <p id="whatHappened"></p>
+            <button class="btn" id="restart">Try again?</button>
+        </div>
+    </div>
+    <!-- MODAL FOR CHOICES -->
+
+
+    <script src="./assets/js/app.js "></script>
+</body>
+
+</html>
